@@ -1,0 +1,157 @@
+.footer {
+  background-color: #0a1045;
+  color: #ffffff;
+  padding: 30px 0 40px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.contact-header {
+  text-align: left;
+  /* margin-bottom: 32px; */
+
+  /* position: relative; */
+  position: absolute;
+  /* top: 1rem; */
+  left: 1rem;
+  top: 35 rem;
+  /* background-color: white; */
+  color: black;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: 0 5px 5px black;
+  /* border: 1px solid black; */
+}
+
+.contact-title {
+  display: inline-block;
+  border: 1px solid #ffffff;
+  border-radius: 40px;
+  padding: 8px 32px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.locations {
+  margin-bottom: 20px;
+}
+
+.location-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.divider {
+  width: 1px;
+  height: 16px;
+  background-color: #ffffff;
+  margin: 0 12px;
+}
+
+.contact-info {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 15px;
+}
+
+.second-row {
+  margin-bottom: 0;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contact-item svg {
+  width: 20px;
+  height: 20px;
+  stroke: #ffffff;
+  stroke-width: 2;
+  fill: none;
+}
+
+.anniversary {
+  margin-bottom: 20px;
+}
+
+.anniversary img {
+  height: 80px;
+  width: auto;
+}
+
+.social-icons {
+  display: flex;
+  gap: 12px;
+}
+
+.social-icon {
+  width: 36px;
+  height: 36px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0a1045;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.social-icon:hover {
+  background-color: #f3f4f6;
+}
+
+.social-icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .footer-left {
+    align-items: center;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .divider {
+    margin: 0 8px;
+  }
+}

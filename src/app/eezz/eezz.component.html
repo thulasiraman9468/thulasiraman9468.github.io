@@ -1,0 +1,51 @@
+<section class="hero-section">
+    <div class="pink-accent"></div>
+    <div class="container">
+        <div class="slideshow-container">
+            <!-- Main Slideshow -->
+            <div class="slide-wrapper" [style.transform]="'translateX(-' + currentIndex * 100 + '%)'">
+              <div class="slide" *ngFor="let slide of slides">
+                <img [src]="slide.image" [alt]="slide.heading">
+                <div class="slide-description">
+                  <h3>{{slide.heading}}</h3>
+                  <p>{{slide.subheading}}</p>
+                  <p>{{slide.cardText}}</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Controls
+            <div class="controls">
+              <button class="prev-btn" (click)="prevSlide()">&#10094;</button>
+              <button class="next-btn" (click)="nextSlide()">&#10095;</button>
+            </div> -->
+            
+            <!-- Indicators (Dots) -->
+            <div class="indicators">
+              <span 
+                *ngFor="let slide of slides; let i = index" 
+                class="dot" 
+                [class.active]="i === currentIndex"
+                (click)="setCurrentSlide(i)">
+              </span>
+            </div>
+          </div>
+          
+          <!-- Thumbnails Row -->
+          <!-- <div class="thumbnails-container">
+            <div class="thumbnail" 
+                 *ngFor="let slide of slides; let i = index"
+                 [class.active]="i === currentIndex"
+                 (click)="setCurrentSlide(i)">
+              <img [src]="slide.image" [alt]="slide.heading">
+              <div class="thumbnail-title">{{slide.cardText}}</div>
+            </div> -->
+          <!-- </div>  <p>test</p> -->
+          <div class="info-card">
+            <p>
+              Join industry experts as we dive into the opportunities, challenges, and ethical 
+              questions shaping AI and its impact on business and society
+            </p>
+          </div>
+        </div>
+    

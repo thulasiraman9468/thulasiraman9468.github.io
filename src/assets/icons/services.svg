@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200">
+  <!-- IT Services Icon -->
+  <g transform="translate(100, 100)">
+    <rect x="-40" y="-40" width="80" height="80" fill="#f8f0ff" stroke="#8a70d6" stroke-width="2" rx="4" />
+    <path d="M-20,-10 L-20,10 L20,10 L20,-10" stroke="#8a70d6" stroke-width="2" fill="none" />
+    <path d="M-10,-10 L-10,-20 L10,-20 L10,-10" stroke="#8a70d6" stroke-width="2" fill="none" />
+    <path d="M-10,10 L-10,20 L10,20 L10,10" stroke="#8a70d6" stroke-width="2" fill="none" />
+    <circle cx="-20" cy="0" r="2" fill="#8a70d6" />
+    <circle cx="20" cy="0" r="2" fill="#8a70d6" />
+    <text x="0" y="60" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">IT Services</text>
+  </g>
+  </svg>

@@ -1,0 +1,27 @@
+<!-- service-cards.component.html -->
+<div class="service-cards-container">
+  <!-- How Does It Work card -->
+  <div class="work-card">
+    <div class="work-content">
+      <h2>How Does It Work?</h2>
+      <a href="#" class="learn-more">
+        Learn More
+        <img src="assets/icons/arrow-right.svg" alt="Arrow" class="arrow-icon">
+      </a>
+    </div>
+  </div>
+
+  <!-- Services section -->
+  <div class="services-section">
+    <div class="services-container">
+      <!-- Service cards generated from array -->
+      <div class="service-card" *ngFor="let service of services">
+        <div class="service-icon">
+          <img [src]="service.icon">
+        </div>
+        <h3>{{ service.title }}</h3>
+        <p>{{ service.description }}</p>
+      </div>
+    </div>
+  </div>
+</div>
